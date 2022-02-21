@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='description' content='En side som beskriver superhelten'>
+        <meta name='keywords' content ='superhelt, superkrefter'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+        <link rel='stylesheet' href='assets/css/index.css'>
+
+        <link rel='icon' href='assets/images/microsoft logo.png'>
+    </head>
+
+
+    <body>
+
+        <h2 class='top_popup'>Try Microsoft 365 for free<a href='scam4.html' target='button' id='claim365'>Claim now</a><span class='close' onclick='deletepara()'>&times;</span></h2>
+        <!--Do not delete h2 top_popup. It hides something too beautiful for any human being to handle.-->
+
+        <div style='margin-top:32px;' id='deleteparasaurus'>
+            <p>Parasaurus!!! </p> <img src='assets/images/parasaurus.png' height='32px' style='float:right; margin-right:75%; margin-top:-48px;'>
+        </div>
+
+        <ul class='menu'>
+            <li target='dropdown'><a target='menu' href='index.html'>Home</a></li>
+            <li target='dropdown'><a target='menu' href='news.html'>News</a></li>
+            <li target='dropdown'><a target='menu' href='about_us.html'>About us</a></li>
+            <li class='dropdown'>
+              <a target='menu' href="javascript:void(0)" class="dropbtn">Products</a>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </li>
+
+            <button class='languagecollapsible'>Language</button>
+
+            <div class='languagecontent'>
+                
+                <div>
+                    <a href='index.html'><img src='assets/images/english_flag.png' id='languageimage'></a>
+                    <p style='display:inline-block;'><a href='index.html' id='languagelink'>English</a></p>
+                </div>
+
+                <div>
+                    <a href='no/no_index.html'><img src='assets/images/norwegian_flag.png' id='languageimage'></a>
+                    <p style='display:inline-block;'><a href='no/no_index.html' id='languagelink'>Norwegian</a></p>
+                </div>
+                   
+            </div>
+
+        </ul>
+
+       
+        <div class='banner'>
+            <img src='assets/images/banner.png' width='1440' height='256px'>
+            <h3 class='centered'>Microsoft tech support</h3>
+        </div>
+
+
+        <p>I got my power from clicking <a href='scam1.html' id='normal_link'> this link </a> </p>
+
+        
+
+        <p>Microsoft tech support</p>
+        <p>I do not scam people</p>
+        <p>eknlsdfjnsd</p>
+
+        
+
+
+
+        <footer class='bottom'>
+            <ul class='footerlinks'>
+                <li><a href='about_us.html'>About us</a></li>
+                <li><a href='about_us.html'>Contact us</a></li>
+                <li><a href='https://www.microsoft.com/en-us?ql=6'>Main site</a></li>
+                
+                
+            </ul>
+
+            <ul class='footerlinks' style='margin-left:20%;'>
+                <li><a href='#products'>Products</a></li>
+                <li><a href='about_us.html'>Contact us</a></li>
+                <li><a href='https://www.microsoft.com/en-us?ql=6'>Main site</a></li>
+                
+            </ul>
+
+            <ul class='footerlinks' style='margin-left:20%;'>
+                <li><a href='#eeee'>Socials:</a></li>
+
+                <div>
+                    <a href='https://twitter.com/microsoft'><img src='assets/images/twitter_logo.png' width='32px' class='social_logo' style='margin-left:-8px;'></a>
+                    <a href='https://www.instagram.com/microsoft/'><img src='assets/images/instagram_logo.png' width='32px' class='social_logo' style='margin-left:8px;'></a>
+                </div>
+                <div>
+                    <a href='https://www.facebook.com/Microsoft/'><img src='assets/images/facebook_logo.png' width='32px' class='social_logo' style='margin-left:-8px;'></a>
+                    <a href='https://www.linkedin.com/company/microsoft'><img src='assets/images/linkedin_logo.png' width='32px' class='social_logo' style='margin-left:8px;'></a>
+                </div>
+            </ul>
+            
+            <hr class='footer'>
+            <div class='copyright'>
+                <p>© 2022</p>
+            </div>
+            <span class='copyright_links'>
+                <a href='https://www.microsoft.com/en-us/legal/terms-of-use'>Terms</a>
+                <a href='https://privacy.microsoft.com/en-us/privacystatement'>Privacy</a>
+                <a href='https://support.microsoft.com/en-us/windows/delete-and-manage-cookies'>Cookies</a>
+            </span>
+        </footer>
+
+
+
+    <script>
+
+        var coll = document.getElementsByClassName('languagecollapsible');
+        var i;
+            
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener('click', function() {
+            this.classList.toggle('languageactive');
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+            } 
+            });
+        }
+
+
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+                if (x.style.display === "none") {
+            x.style.display = "block";
+            } else {
+            x.style.display = "none";
+        }
+    }
+
+        var closebtns = document.getElementsByClassName("close");
+        var i;
+    
+        for (i = 0; i < closebtns.length; i++) {
+        closebtns[i].addEventListener("click", function() {
+            this.parentElement.style.display = 'none';
+        });
+
+      
+    }
+
+        function deletepara() {
+            const myobj = document.getElementById('deleteparasaurus');
+        myobj.remove();
+    }
+
+    </script>
+
+    </body>
+
+</html>

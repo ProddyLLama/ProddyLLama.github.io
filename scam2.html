@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='description' content='Nothing sus here to see at all'>
+        <meta name='keywords' content ='sus, sussy, information, money, scam'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel='stylesheet' href='assets/css/scam2.css'>
+
+    </head>
+
+    <body>
+        <p>Want to get better at Python?</p>
+
+        <img src='assets/images/python logo.png' alt='python logo'>
+
+
+        <div class="doopup">
+            <button onclick="myFunction()" class="dadabtn">Dropdown</button>
+            <div id="dies" class="yeahthecontent">
+              <input type="text" placeholder="Search.." id="etst" onkeyup="filterFunction()">
+              <a href="#about">About</a>
+              <a href="#base">Base</a>
+              <a href="#blog">Blog</a>
+              <a href="#contact">Contact</a>
+              <a href="#custom">Custom</a>
+              <a href="#support">Support</a>
+              <a href="#tools">Tools</a>
+            </div>
+          </div>
+          
+          <script>
+          /* When the user clicks on the button,
+          toggle between hiding and showing the dropdown content */
+          function myFunction() {
+            document.getElementById("dies").classList.toggle("doomsday");
+          }
+          
+          function filterFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("etst");
+            filter = input.value.toUpperCase();
+            div = document.getElementById("dies");
+            a = div.getElementsByTagName("a");
+            for (i = 0; i < a.length; i++) {
+              txtValue = a[i].textContent || a[i].innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                a[i].style.display = "";
+              } else {
+                a[i].style.display = "none";
+              }
+            }
+          }
+          </script>
+
+    </body>
