@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='no'>
+    
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='description' content='Windows defender har oppdaget mistenksom aktivitet'>
+        <meta name='keywords' content ='antivirus, windows, defender, beskyttelse, brannmur'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    
+        <link rel='stylesheet' href='../assets/css/antivirus.css'>
+
+        <title>Mistenksom kobling blokkert</title>
+
+        <link rel='icon' href='../assets/images/windows_defender_logo.png'>
+
+    </head>
+
+    <body>
+
+        <h1>Windows beskyttet PCen</h1>
+        
+        <p>Windows Defender SmartScreen hindret en ukjent app i å starte. Kjøring av<span style='display:block;'> denne appen kan utsette PC-en for risiko.</span></p>
+
+
+        <div id='man'><p id='info' onclick='creature()'>Mer info</p></div>
+
+        <script>
+            document.getElementById('man').addEventListener('click', creature);
+
+            function creature() {
+              document.getElementById('man').innerHTML = '<a href="../assets/sus/notsussyfile.bat" download target="runanyway">Kjør likevel</a> <p>App: <span style="margin-left:50px;">Chrome.exe</span></p> <p>Utgiver: <span style="margin-left:28px;">Ukjent utgiver</span></p>';
+            }
+
+        </script>
+
+
+
+        <a href='no_index.html' target='dontrun'>Ikke kjør</a>
+
+    
+
+    </body>
+</html>
