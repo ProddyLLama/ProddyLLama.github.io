@@ -1,0 +1,129 @@
+.top_popup{
+  font-size:24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:dimgray;
+  text-shadow: 1px 1px 2px rgb(73, 73, 73);
+  font-weight:512;
+  background-color:whitesmoke;
+
+  position:fixed;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+
+  margin-top:0px;
+
+  height:32px;
+  padding:16px;
+
+  z-index:2;
+  box-shadow:2px 5px 10px lightgray;
+  display:flex;
+}
+
+.top_popup > img {
+  width:32px;
+  padding-right:16px;
+}
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  padding: 12px 16px;
+  transform: translate(0%, -50%);
+  text-decoration:none;
+  text-shadow:none;
+}
+
+.close:hover {
+  background:lightgray;
+}
+
+
+
+
+a[target=button]:link, a[target=button]:visited {
+  background-color:dodgerblue;
+  padding:10px 20px;
+  text-align:center;
+  display:inline-block;
+  color:white;
+  text-decoration:none;
+  text-shadow:none;
+  font-size:16px;
+}
+
+a[target=button]:hover, a[target=button]:active {
+  background-color:royalblue;
+  color:white;
+}
+
+
+#claim365 {
+  position:fixed;
+  right:64px;
+  top:12px;
+}
+
+
+
+
+
+
+
+
+#normal_link {
+  color:blue;
+
+}
+
+#normal_link:hover {
+  text-shadow:1px 1px black;
+}
+
+
+
+
+
+
+
+
+.banner {
+  text-align:center;
+  position:relative;
+
+  color:white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:48px;
+  text-transform:uppercase;
+  z-index:-1;
+}
+
+.banner_text{
+  position:absolute;
+  top:30%;
+  left:50%;
+  transform: translate(-50%, -30%);
+  font-weight:normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
