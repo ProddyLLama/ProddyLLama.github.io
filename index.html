@@ -63,6 +63,56 @@
         </div>
 
 
+        <div class='reveal_container'>
+            <h2 class='reveal title'>You're potential, we're passion™</h2>
+            <p class='reveal' style='line-height:32px;'>Here at Microsoft, we make sure you'll never want to come back.</p>
+        </div>
+
+        <div class='news reveal'>
+        <table style='margin:auto;'>
+            <h2 class='news_title'>Latest news from Microsoft</h2>
+            <td>
+                <div class='news_container'>
+                    <h7 class='news_date'>03/03/2033</h7>
+                    <h3>Apple still refuses to cooperate</h3>
+                    <p>Microsoft once again tries to convince Apple to get purchased. All attempts so far have been unsuccessful, but Microsoft believes that they will be on board next time with Robux® on the table.</p>
+                    <img src='assets/images/microsoft_apple_arguing.png'>
+                </div>
+            </td>
+
+            <td>
+                <div class='news_container'>
+                    <h7 class='news_date'>26/02/2033</h7>
+                    <h3>Microsoft buys Roblox</h3>
+                    <p>After heavy debate, Roblox finally agrees to be bought by Microsoft. This might be a small step for Microsoft, but a huge rise in value for Microcoin®, now that they have acquired their competition.</p>
+                    <img src='assets/images/microsoft_roblox_handshake.png'>
+                </div>
+            </td>
+
+            <td>
+                <div class='news_container'>
+                    <h7 class='news_date'>18/02/2033</h7>
+                    <h3>Cloning attempt successful.. almost</h3>
+                    <p>Fresh from silicon valley comes another failure. This has greatly disappointed our lord, who is now hunting down those responsible. Our thoughts and prayers are with our supreme leader for this tragedy.</p>
+                    <img src='assets/images/cloning_machine.png'>
+                </div>
+            </td>
+            
+        </table>
+        </div>
+
+        <div class='scroll_overview'>
+            <div id='section1'>
+                <h2>Section 1</h2>
+                <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+            </div>
+          
+            <div id='section2'>
+                <h2>Section 2</h2>
+                <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
+            </div>
+        </div>
+
         <p>I got my power from clicking <a href='scam1.html' id='normal_link'> this link </a> </p>
 
         
@@ -78,15 +128,7 @@
         <p><a id='normal_link' href='scam4.html'>"download microsoft 365 for FREE" goes to 365 scam</a></p>
         <p><a id='normal_link' href='scam5.html'>"Writing is not that easy, but Grammarly can help." goes to grammarly scam</a></p>
 
-        <div class="main" id="section1">
-            <h2>Section 1</h2>
-            <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
-          </div>
-          
-          <div class="main" id="section2">
-            <h2>Section 2</h2>
-            <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
-          </div>
+
 
 
 
@@ -182,7 +224,23 @@
 
 
 
+    function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
 
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
 
 
     </script>
