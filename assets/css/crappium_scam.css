@@ -1,0 +1,55 @@
+h1 {
+    font-size:48px;
+    font-family:Calibri, Haettenschweiler, 'Arial Narrow Bold', serif;
+    text-align:left;
+    text-shadow: 5px 5px navy;
+    background-color:salmon;
+    color:blue;
+    font-weight:bold;
+}
+
+body {
+    background-color:whitesmoke;
+}
+
+img {
+    border-color:lightcoral;
+    border-width:5px;
+    border-style: groove;
+}
+
+input[type=text], select, textarea {
+    border: 5px solid silver;
+    width:200px;
+    height:10px;
+    background-color: white;
+    text-align: left;
+    padding:10px;
+    margin:20px;
+}
+
+.container {
+    border-radius:5px;
+    background-color:lavender;
+    padding:20px;
+}
+
+
+a[target=submit]:link, a:visited {
+    background-color:limegreen;
+    padding:10px 20px;
+    text-align:left;
+    display:inline-block;
+    color:white;
+    text-decoration:none;
+}
+
+a[target=submit]:hover, a:active {
+    background-color:green;
+    color:white;
+}
+
+p {
+    font-size:20px;
+    color:darkblue;
+}
