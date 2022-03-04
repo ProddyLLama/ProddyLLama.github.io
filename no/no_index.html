@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang='no'>
+
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='description' content='En side som beskriver superhelten'>
+        <meta name='keywords' content ='superhelt, superkrefter'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+        <link rel='stylesheet' href='../assets/css/index.css'>
+
+        <link rel='icon' href='../assets/images/microsoft logo.png'>
+    </head>
+
+
+    <body>
+        <h1>Velkommen til Microsoft kundestøtte</h1>
+
+        <p>I got my power from clicking <a href='no_scam1.html' id='normal_link'> this link </a> </p>
+
+        <a href='no_scam1.html' target='button'>E</a>
+
+        <p>Microsoft tech support</p>
+        <p>I do not scam people</p>
+        <p>eknlsdfjnsdåæø</p>
+
+
+        <button class='languagecollapsible'>Språk</button>
+
+        <div class='languagecontent'>
+            <p><a href='../index.html' id='languagelink'>Engelsk</a></p>
+            <a href='../index.html'><img src='../assets/images/english_flag.png' id='languageimage'></a>
+            <p><a href='no_index.html' id='languagelink'>Norsk</a></p>
+            <a href='no_index.html'><img src='../assets/images/norwegian_flag.png' id='languageimage'></a>
+        </div>
+
+    <script>
+        var coll = document.getElementsByClassName('languagecollapsible');
+        var i;
+            
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener('click', function() {
+            this.classList.toggle('languageactive');
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+            } 
+            });
+        }
+            </script>
+        
+    </body>
+
+</html>

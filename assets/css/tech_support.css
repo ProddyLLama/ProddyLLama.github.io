@@ -1,0 +1,461 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*the base of the menu*/
+.menu {
+    font-size:24px;
+    list-style-type: none;
+    padding:0;
+  
+    background-color:dodgerblue;
+    color:honeydew;
+    padding-left:120px;
+    max-height:50px;
+}
+  
+/*wow makes the text in the menu base float to the left*/ 
+li[target='dropdown'] {
+    float:left;
+}
+ 
+/*funny text of the menu base*/
+li[target='dropdown'] a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 9px 32px;
+    text-decoration: none;
+}
+
+/*menu base hover gives a darker background colour*/
+li[target='dropdown'] a:hover, .dropdown:hover .dropbtn {
+    background-color:royalblue;
+}
+
+/*now the dropdown is an inline block!!!!!*/
+li.dropdown {
+    display: inline-block;
+}
+
+/*the actual dropdown :pollo:*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:whitesmoke;
+    min-width: 157px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/*how the links in the dropdown will look*/
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-bottom:2px solid white;
+}
+
+/*hovering over the links in the dropdown will have this colour yes yes*/
+.dropdown-content a:hover {
+    background-color:rgb(225, 235, 243);
+}
+
+/*oh wow the dropdown is a block*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+/*the links in the language menu*/
+#languagelink {
+    color:midnightblue;
+      
+    font-size:18px;
+    margin-left:16px;
+    text-decoration:none;
+    display:inline-block;
+    margin-top:16px;
+    padding-bottom:16px;
+    font-weight:normal;
+}
+
+/*gives the links in the language menu an underline at hover*/
+#languagelink:hover {
+    text-decoration:underline;
+}
+
+/*makes the images of flags in the language menu match the links*/
+#languageimage {
+    margin-top:-35px;
+    width:24px;
+    height:14px;
+    display:inline-block;
+      
+}
+
+/*gives the flags a funny shadow at hover*/
+#languageimage:hover {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+/*the button you can click for the language collapsible*/
+.languagecollapsible {
+    background-color:rgb(51, 92, 226);
+    color: white;
+    cursor: pointer;
+    padding: 14px;
+    width: 256px;
+    height:50px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+  
+    float:right;
+    margin-right:50px;
+    top:76px;
+}
+
+/*the plus to the right in the language collapsible*/
+.languagecollapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+/*the minus to the right in the language collapsible*/
+.languageactive:after {
+    content: "\2212";
+}
+
+/*oh wow gives the language menu a darker colour at hover*/
+.languagecollapsible:hover {
+    background-color:rgb(30, 45, 182);
+}
+    
+
+/*the grey stuff in the language menu*/
+.languagecontent {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: whitesmoke;
+      
+    width:220px;
+    margin-top:50px;
+  
+    float:right;
+    margin-right:-256px;
+  
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;  
+}
+
+/*just makes the body good or whatever*/
+body {
+    height:100%;
+    margin:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/*
+gives the menu a small background that switches to the other colours with gradients
+adds that noice animation at hover
+*/
+a[target=menu] {
+    background:
+      linear-gradient(
+        to right,
+        dodgerblue,
+        dodgerblue
+      ),
+      linear-gradient(
+        to right,
+        rgb(48, 50, 192),
+        rgb(48, 50, 192)
+          
+    );
+    background-size: 100% 0px, 0 5px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+/*hover nice anim for the menu*/
+a[target=menu]:hover {
+    background-size: 0 0px, 100% 5px;
+}
+  
+
+
+/*footer, margin from the bottom of the content*/
+footer {
+    background-color:rgb(225, 235, 243);
+    margin-bottom:0px;
+    height:256px;
+
+    margin-top:64px;
+
+    font-size:16px;
+}
+
+
+.footerdiv {
+    margin:auto;
+    max-width:1366px;
+}
+
+
+/*footerlinks and the consistency*/
+.footerlinks {
+    margin:16px;
+    display:inline-block;
+    list-style-type:none;
+  
+    line-height:48px;
+    color:midnightblue;
+}
+
+.footerlinks > li > a {
+    text-decoration:none;
+}
+  
+.footerlinks > li > a:hover {
+    text-decoration:underline;
+}
+
+.footerlinks > li > a:visited {
+    color:midnightblue;
+}
+
+.footerlinks > li > a:active {
+    color:midnightblue;
+}
+
+
+
+/*just for the line in the footer*/
+hr.footer {
+    border:1px solid whitesmoke;
+}
+
+
+/*the small logos that link to the socials*/
+.social_logo {
+    margin-left:60%;
+    width:32px;
+}
+
+/*gives a nice shadow at hover*/
+.social_logo:hover {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+/*the C 2022 in the corner*/
+.copyright {
+    margin-left:54px;
+    display:inline-block;
+    margin-top:-16px;
+}
+
+/*just makes the copyright c match with the div better*/
+.copyright > p {
+    color:slategray;
+    font-size:16px;
+    margin:auto;
+    margin-top:20px;
+    font-weight:lighter;
+  }
+  
+  
+/*for the copyright links*/
+.copyright_links > a {
+    color:midnightblue;
+    display:inline-block;
+    text-decoration:none;
+    margin-left:42px;
+}
+  
+/*gives the links underline at hover*/
+.copyright_links > a:hover {
+  text-decoration:underline;
+}
+
+
+
+
+p {
+    margin:32px;
+    font-size:24px;
+    color:black;
+    font-weight:lighter;
+    line-height:32px;
+}
+
+
+/*for 110% (on chrome) on my 1920x1080 pixel laptop*/
+@media screen and (max-width: 1408px) {
+    .menu {
+        font-size:20px;
+    }
+
+    .dropdown-content {
+        min-width:142px;
+    }
+
+    .languagecollapsible {
+        height:44px;
+    }
+
+    .languagecontent {
+        margin-top:45px;
+    }
+
+    footer {
+        font-size:14px;
+    }
+
+    .footerdiv {
+        max-width:1280px;
+    }
+
+}
+
+
+/*for 150% (on chrome) on my 1920x1080 pixel laptop*/
+@media screen and (max-width: 1216px) {
+    .menu {
+        font-size:14px;
+        padding-left:60px;
+    }
+
+    .dropdown-content {
+        min-width:118px;
+    }
+
+    .languagecollapsible {
+        font-size:12px;
+        width:192px;
+        margin-right:16px;
+        height:36px;
+    }
+
+    .languagecontent {
+        margin-top:36px;
+        width:156px;
+        margin-right:-192px;
+    }
+    
+    #languagelink {
+        margin-top:8px;
+        font-size:12px;
+        line-height:8px;
+    }
+
+    #languageimage {
+        height:10px;
+        width:18px;
+    }
+
+    footer {
+        font-size:10px;
+        height:auto;
+        padding-bottom:12px;
+    }
+
+    .footerlinks {
+        line-height:32px;
+    }
+
+    .social_logo {
+        width:24px;
+    }
+
+    .footerdiv {
+        max-width:1120px;
+    }
+
+    .copyright > p {
+        font-size:12px;
+    }
+
+}
+
+
+/*for 200% (on chrome) on my 1920x1080 pixel laptop*/
+@media screen and (max-width: 864px) {
+    .menu {
+        font-size:12px;
+        padding-left:20px;
+    }
+
+    li[target='dropdown'] a, .dropbtn {
+        padding: 6px 16px;
+    }
+
+    .dropdown-content {
+        min-width:79px;
+    }
+
+    .dropdown-content a {
+        padding: 6px 8px;
+    }
+
+    .languagecollapsible {
+        font-size:10px;
+        width:144px;
+        height:28px;
+        padding-top:10px;
+    }
+
+    .languagecontent {
+        margin-top:28px;
+        width:108px;
+        margin-right:-144px;
+    }
+    
+    #languagelink {
+        margin-top:0px;
+        font-size:10px;
+        line-height:4px;
+    }
+
+    #languageimage {
+        height:8px;
+        width:14px;
+    }
+
+    footer {
+        font-size:8px;
+        height:auto;
+        padding-bottom:6px;
+    }
+
+    .footerlinks {
+        line-height:24px;
+    }
+
+    .social_logo {
+        width:16px;
+    }
+
+    .footerdiv {
+        max-width:800px;
+    }
+
+    .copyright > p {
+        font-size:8px;
+    }
+}

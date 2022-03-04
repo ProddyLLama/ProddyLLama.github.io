@@ -1,0 +1,294 @@
+
+/*comments yeah*/
+
+
+
+/*just for the "here" in greybox*/
+a[target=normal_link] {
+      color:ghostwhite;
+      text-decoration:none;
+      font-weight:normal;
+}
+
+a[target=normal_link]:hover {
+    text-decoration:underline;
+    color:cyan;
+}
+  
+
+
+
+
+/*the paragraphs above the boxes*/
+.description > p {
+    text-align: center;
+    font-size: 24px;
+    color:black;
+    background-color:white;
+    height:128px;
+    font-weight:lighter;
+    line-height:42px;
+    margin-top:48px;
+}
+
+/*h1 for description*/
+h1 {
+    font-size:42px;
+    font-weight:lighter;
+    text-align: center;
+    margin-top:64px;
+}
+
+
+/*the content in the boxes*/
+#boxcontent {
+    display:block;
+    color:white;
+    display:inline-block;
+    padding:64px;
+    width:42%;
+    line-height:42px;
+    min-width:640px;
+}
+
+/*for the paragraphs in the box*/
+#boxcontent > p {
+    font-size:18px;
+    line-height:32px;
+    color:white;
+    margin-left:0px;
+}
+
+/*the grey box*/
+.greybox {
+    background-color:darkslategrey;
+    padding-left:64px;
+    height:560px;
+    width:100%;
+    display:inline-block;
+}
+
+/*header for grey box*/
+.greyboxheader {
+    color:rgb(134, 204, 204);
+    font-weight:lighter;
+    font-size:42px;
+    margin-top:16px;
+    display:inline-block;
+}
+
+/*image for grey box*/
+.greyboximg {
+    display:inline-block;
+    margin-right:256px;
+}
+
+#boximg > img {
+    height:320px;
+    margin-bottom:48px;
+}
+
+
+/*the purple box*/
+.purplebox {
+    background-color:rgb(72, 35, 105);
+    height:560px;
+    width:100%;
+    display:inline-block;
+}
+
+/*header for purple box*/
+.purpleboxheader {
+    color:rgb(245, 153, 253);
+    font-weight:lighter;
+    font-size:42px;
+    margin-top:16px;
+}
+
+/*
+images in the purple box
+floats left to make it fancier
+*/
+.purpleboximg {
+    float:left;
+    margin-top:96px;
+}
+
+
+/*just so you get nice shadow when hovering over the spoilers*/
+#delete_me:hover {
+    box-shadow: 5px 8px 16px 10px rgba(0,0,0,0.2);
+}
+#delete_him:hover {
+    box-shadow: 5px 8px 16px 10px rgba(0,0,0,0.2);
+}
+
+
+
+/*
+add on a rewrite of the entire code haha
+just for those phone users :pensive:
+*/
+
+/*for 110% (on chrome) on my 1920x1080 pixel laptop*/
+@media screen and (max-width: 1408px) {
+    .purpleboximg {
+        margin-left:64px;
+    }
+}
+
+/*for 125% (on chrome) on my 1920x1080 pixel laptop*/
+@media screen and (max-width: 1376px) {
+    #boximg > img {
+        height:256px;
+    }
+
+    .purpleboximg {
+        margin-left:128px;
+    }
+
+}
+
+/*for 150% (on chrome) on my 1920x1080 pixel laptop*/
+@media screen and (max-width: 1216px) {
+    h1 {
+        font-size:28px;
+    }
+
+    .description > p {
+        margin-top:0px;
+        font-size:18px;
+        line-height:26px;
+    }
+
+    .greybox {
+        height:640px;
+    }
+
+    #boximg {
+        position:absolute;
+        text-align:center;
+
+        left:50%;
+        transform: translate(-50%, -320px);
+    }
+
+    #boxcontent {
+        margin-top:256px;
+        padding-left:0px;
+        text-align:center;
+    }
+
+    #boxcontent > p {
+        font-size:14px;
+        line-height:20px;
+    }
+
+    .greyboxheader {
+        font-size:28px;
+    }
+
+
+    .purplebox {
+        height:640px;
+        padding-left:60px;
+    }
+
+    .purpleboximg {
+        margin-left:0px;
+        margin-top:16px;
+    }
+
+    .purpleboxheader {
+        font-size:28px;
+    }
+
+}
+
+
+/*for 200% (on chrome) on my 1920x1080 pixel laptop*/
+@media screen and (max-width: 864px) {
+    h1 {
+        font-size:24px;
+    }
+
+    .description > p {
+        margin-top:0px;
+        font-size:14px;
+        line-height:26px;
+        margin-bottom:0px;
+    }
+
+    .greybox {
+        height:544px;
+    }
+
+    #boximg > img {
+        height:192px;
+        width:auto;
+        transform: translate(0, 64px);
+    }
+
+    #boxcontent {
+        margin-top:192px;
+    }
+
+    #boxcontent > p {
+        font-size:12px;
+        margin-top:0px;
+    }
+
+    .greyboxheader {
+        font-size:24px;
+    }
+
+
+    .purplebox {
+        height:544px;
+    }
+
+    .purpleboxheader {
+        font-size:24px;
+    }
+}
+
+
+@media screen and (max-width: 704px) {
+    h1 {
+        font-size:20px;
+    }
+
+    .description > p {
+        margin-top:0px;
+        font-size:12px;
+        line-height:26px;
+        margin-bottom:0px;
+    }
+
+    .greybox {
+        height:704px;
+    }
+
+    #boxcontent {
+        margin-top:192px;
+        min-width:400px;
+        padding-left:0px;
+    }
+
+    #boxcontent > p {
+        font-size:10px;
+    }
+
+    .greyboxheader {
+        font-size:20px;
+    }
+
+
+    .purplebox {
+        height:704px;
+    }
+
+    .purpleboxheader {
+        font-size:20px;
+    }
+}
