@@ -16,7 +16,7 @@
     </head>
 
 
-    <body>
+    <body onload='setTimeout("loadmodal()", 20000)'>
 
         <h2 class='top_popup'><img src='assets/images/365_logo.png'>Try Microsoft 365 for free<a href='scam4.html' target='button' id='claim365'>Claim now</a><span class='close' onclick='deletepara()'>&times;</span></h2>
         <!--Do not move h2 top_popup away from this position. It hides something too beautiful for any human being to handle.-->
@@ -25,19 +25,20 @@
             <p style='font-size:20px;'>Parasaurus!!!</p> <img src='assets/images/parasaurus.png' height='32px' style='margin:auto; display:block; margin-top:-64px;'>
         </div>
 
+        <!--menu-->
         <ul class='menu'>
             <li target='dropdown'><a target='menu' href='index.html'>Home</a></li>
             <li target='dropdown'><a target='menu' href='https://news.microsoft.com/'>News</a></li>
             <li target='dropdown'><a target='menu' href='about_us.html'>About us</a></li>
             <li class='dropdown'>
-              <a target='menu' href='javascript:void(0)' class="dropbtn" id='products'>Products</a>
+              <a target='menu' href='javascript:void(0)' class='dropbtn' id='products'>Products</a>
               <div class='dropdown-content'>
                 <a href='scam4.html'>Office</a>
                 <a href='crappium_scam.html'>Protection</a>
                 <a href='scam3.html'>FREE robux</a>
               </div>
             </li>
-
+            <!--language thing-->
             <button class='languagecollapsible'>Language</button>
 
             <div class='languagecontent'>
@@ -68,89 +69,192 @@
             <p class='reveal' style='line-height:32px;'>Here at Microsoft, we make sure you'll never want to come back.</p>
         </div>
 
-        <div class='news reveal'>
-        <table style='margin:auto;'>
+
+        <div class='news_table news reveal'>
+            <!--perhaps slideshow for the news @media-->
             <h2 class='news_title'>Latest news from Microsoft</h2>
-            <td>
-                <div class='news_container'>
-                    <h7 class='news_date'>03/03/2033</h7>
-                    <h3>Apple still refuses to cooperate</h3>
-                    <p>Microsoft once again tries to convince Apple to get purchased. All attempts so far have been unsuccessful, but Microsoft believes that they will be on board next time with Robux® on the table.</p>
-                    <img src='assets/images/microsoft_apple_arguing.png'>
-                </div>
-            </td>
 
-            <td>
-                <div class='news_container'>
-                    <h7 class='news_date'>26/02/2033</h7>
-                    <h3>Microsoft buys Roblox</h3>
-                    <p>After heavy debate, Roblox finally agrees to be bought by Microsoft. This might be a small step for Microsoft, but a huge rise in value for Microcoin®, now that they have acquired their competition.</p>
-                    <img src='assets/images/microsoft_roblox_handshake.png'>
-                </div>
-            </td>
+            <div class='news_container'>
+                <h7 class='news_date'>03/03/2033</h7>
+                <h3>Apple still refuses to cooperate</h3>
+                <p>Microsoft once again tries to convince Apple to get purchased. All attempts so far have been unsuccessful, but Microsoft believes that they will be on board next time with Robux® on the table.</p>
+                <img src='assets/images/microsoft_apple_arguing.png'>
+            </div>
 
-            <td>
-                <div class='news_container'>
-                    <h7 class='news_date'>18/02/2033</h7>
-                    <h3>Cloning attempt successful.. almost</h3>
-                    <p>Fresh from silicon valley comes another failure. This has greatly disappointed our lord, who is now hunting down those responsible. Our thoughts and prayers are with our supreme leader for this tragedy.</p>
-                    <img src='assets/images/cloning_machine.png'>
-                </div>
-            </td>
-            
-        </table>
+
+            <div class='news_container'>
+                <h7 class='news_date'>26/02/2033</h7>
+                <h3>Microsoft buys Roblox</h3>
+                <p>After heavy debate, Roblox finally agrees to be bought by Microsoft. This might be a small step for Microsoft, but a huge rise in value for Microcoin®, now that they have acquired their competition.</p>
+                <img src='assets/images/microsoft_roblox_handshake.png'>
+            </div>
+
+            <div class='news_container'>
+                <h7 class='news_date'>18/02/2033</h7>
+                <h3>Cloning attempt successful.. almost</h3>
+                <p>Fresh from silicon valley comes another failure. This has greatly disappointed our lord, who is now hunting down those responsible. Our thoughts and prayers are with our supreme leader for this tragedy.</p>
+                <img src='assets/images/cloning_machine.png'>
+            </div>
         </div>
+
 
 
         <table class='scrollcontainer'>
             <td>
             <div class='scroll_overview'>
                 <a href='#fix_problems'>Fixing problems yourself</a>
-                <a href='#section2'>go to two!! !!!!! !</a>
-                <a href='#section33433'>Go to [generic tech problem 3]</a>
-                <a href='#sectionchangeme'>scroll to ye ye ye ye</a>
-                <a href='#sectionhohoho'>go to two!! !!!!! !</a>
-                <a href='#bäÆen'>Go to [generic tech problem 3]</a>
+                <a href='#no_login'>Inability to log in</a>
+                <a href='#no_open'>Inability to launch computer</a>
+                <a href='#contact_tech_support'>How to contact Tech Support</a>
             </div>
             </td>
 
             <td>
             <h1 class='scrollheader'>Common tech problems</h1>
-            <p>We have listed some common tech problems to help you out. If you don't find what you're looking for, consider <a href='about_us.html' class='p_link'>contacting us directly</a>. That way, we can help you with your specific problem, and we get to ensure that this gets patched in the future.</p>
-            <p>If you do <a href='about_us.html' class='p_link'>contact us directly</a>, make sure to explain the problem properly to our employees. We don't want to waste anyone's time, as we at Microsoft know you need time to invest into Microcoin®.</p>
+            <p class='scroll_p'>We have listed some common tech problems to help you out. If you don't find what you're looking for, consider <a href='#contact_tech_support' class='p_link'>contacting us directly</a>. That way, we can help you with your specific problem, and we get to ensure that this gets patched in the future.</p>
+            <p class='scroll_p'>If you do <a href='#contact_tech_support' class='p_link'>contact us directly</a>, make sure to explain the problem properly to our employees. We don't want to waste anyone's time. At Microsoft, we know you need time to invest into Microcoin®.</p>
             </td>
         </table>
 
-        <table class='container'>
+        <table class='container' id='fix_problems'>
             <td>
-                <div class='tech_problem'>
+                <div class='container_content'>
                     <h2>Fixing problems yourself</h2>
                     <p>Sometimes, the problem has a really simple solution. Before doing anything else (with some exceptions), try restarting your device (works 100% of the time 10% of the time).</p>
-                    <p>I got my power from clicking <a href='scam1.html' id='normal_link'> this link </a> </p>
+                    <p>Barring the exceptions, this is the go-to solution for any tech problem.</p>
+                    <p>Of course, you can call us at tech support if you struggle, as our CEO, Satyra Nutella, has the ability to support your technology to its fullest extent.</p>
+                    <img src='assets/images/restart.png'>
                 </div>
             </td>
 
             <td>
                 <div class='scam_window'>
-                    <img src='assets/images/download_icon.png'>
+                    <img src='assets/images/super_nutella.png' style='width:128px;'>
+                    <h2>Get [SUPERPOWERS] HERE!!</h2>
+                    <p style='margin:0px;'>For only [0 kromer] you can get [SUPERPOWERS] just like Satyra Nutella.</p>
+                    <p style='margin:0px; margin-bottom:32px;'>Click the [hyperlink blocked] below for more details.</p>
+                    <a href='scam1.html' target='button'>CLICK ME</a>
+                </div>
+            </td>
+        </table>
+
+
+
+        <table class='container' id='no_login'>
+
+            <td>
+                <div class='scam_window' style='background-color:rgb(32, 19, 68);'>
+                    <a href='scam3.html' class='robux_window'>
+                        Claim your
+                        <img src='assets/images/robux_1.png' class='roblox_img_1'>
+                        <img src='assets/images/robux_2.png' class='roblox_img_1'>
+                        <img src='assets/images/download_icon.png' class='roblox_img_2'>
+                    </a>
+
+                    <img src='assets/images/arrow_green.png' style='width:64px; margin:32px auto;'> 
+
+                    <a href='scam3.html' class='robux_window'>
+                        FREE Roblox cosmetics
+                        <img src='assets/images/roblox_cosmetics4.png' class='roblox_img_1'>
+                        <img src='assets/images/roblox_cosmetics2.png' class='roblox_img_2'>
+                    </a>
+                </div>
+            </td>
+
+            <td>
+                <div class='container_content'>
+                    <h2>Can't log in?</h2>
+                    <p>We all hate it when you're unable to log into your Microsoft powered computer. It's the workplace of many, and needs to be fed information all the time.</p>
+                    <p>To fix this, try logging in again. It might sound obvious, but many overlook this tiny detail. If this doesn't work, make sure you haven't missed anything.</p>
+                    <p>This problem might have been caused by an expired password, or maybe your account was locked for security reasons. Should that be the case, your data will be permanently terminated. Make sure to not keep any backups whatsoever, and delete all shadowcopies.</p>
+                </div>
+            </td>
+        </table>
+
+
+        <table class='container' id='no_open'>
+            <td>
+                <div class='container_content'>
+                    <h2>Can't launch your computer?</h2>
+                    <p>This tech problem is feared by all, but our team knows some easy solutions.</p>
+                    <p>If pressing the power button doesn't help, try <span style='font-style:italic;'>holding it for 10 seconds</span> before releasing.</p>
+                    <p>The alternative solution, that we fully embrace when no others work, is to gently bash your keyboard and monitor togetherrr249ih4hr4hr4h4ho9</p>
+                    <img src='assets/images/blue_screen_of_death.png'>
+                </div>
+            </td>
+
+            <td>
+                <div class='scam_window'>
+                    <img src='assets/images/365_logo.png' style='width:128px;'>
+                    <h2>FREE MICROSOFT 365 GIVEAWAY</h2>
+                    <p style='margin:0px;'>Microsoft is giving away free trials of Microsoft 365.</p>
+                    <p style='margin:0px;'>Here at Microsoft, we believe that you're the potential.</p>
+                    <p style='margin:0px; margin-bottom:32px;'>Click below for more details:</p>
+                    <a href='scam4.html' target='button' style='display:block;'>Click here</a>
+                </div>
+            </td>
+        </table>
+
+        <div class='long_scam'>
+            <div>
+                <img src='assets/images/python_logo.png'></a>
+                <a href='scam2.html' class='scamdownload'>LEARN PYTHON TODAY</a>
+                <img src='assets/images/python_logo.png'></a>
+            </div>
+        </div>
+
+        <table class='container' id='contact_tech_support'>
+
+            <td>
+                <div class='scam_window' style='text-align:center;'>
+                    <img src='assets/images/sudoku.gif' style='width:100%;'>
+                    <a href='https://www.usdoku.com/'><img src='assets/images/play_now.gif' style='width:100%;'></a>
+                </div>
+            </td>
+
+            <td>
+                <div class='container_content'>
+                    <h2>Contacting us</h2>
+                    <p>When needed, you can always contact us at tech support (that's our job). By clicking <a href='antivirus.html' class='p_link'>this link</a> you can download our program.</p>
+                    <p>To contact us, you need to <a href='antivirus.html' class='p_link'>download our program</a> and navigate through the information.</p>
+                    <p>If you struggle, you can <a href='scam1.html' class='p_link'>download superpowers</a> to fix the problems with ease.</p>
                 </div>
             </td>
         </table>
 
         
 
-        <p>multiple different popups or whatever</p>
-        <p>headers for the tech problems</p>
-
-        <p>ideas for scams:</p>
-        <p><a id='normal_link' href='scam1.html'>"ever wanted superpowers? click here" goes to power scam</a></p>
-        <p><a id='normal_link' href='scam2.html'>"want to git gud at python?" goes to python scam</a></p>
-        <p><a id='normal_link' href='scam3.html'>"claim you free robux" goes to robux scam</a></p>
-        <p><a id='normal_link' href='scam4.html'>"download microsoft 365 for FREE" goes to 365 scam</a></p>
-        <p><a id='normal_link' href='scam5.html'>"Writing is not that easy, but Grammarly can help." goes to grammarly scam</a></p>
 
 
 
+        <!-- The Modal -->
+        <div id='modal' class='grammarly'>
+
+            <!-- Modal content -->
+            <div class='grammarly_content'>
+                <div class='grammarly_header'>
+                    <span class='grammarly_close'>&times;</span>
+                    <a href='scam5.html'><img src='assets/images/grammarly.png' class='grammarly_logo'></a>
+                </div>
+
+                <div class='grammarly_body'>
+                    <p>Writtings not that eazy, butt Grammarly can hellp.</p>
+                    <img src='assets/images/grammarly_ad.png' class='grammarly_img'>
+                    <p>These sentance has grammer correct, but its worldy and hard too red.</p>
+                    <p>It undermains the writers' massage and the world choise are blandt.</p>
+                    <p>Grammarly's cutting ej teknology helps you kraft compelling understandabel that makes a impact on you're reeder.</p>
+                    <p>Much bettre.</p>
+
+                    
+                </div>
+
+                <div class='grammarly_footer'>
+                    <a href='scam5.html' class='grammarly_download'><span style='font-weight:bolder;'>Donnload Grammarly</span> - It's's frie!!</a>
+                </div>
+
+            </div>
+             
+        </div>
 
 
         <footer>
@@ -221,19 +325,19 @@
 
 
         function myFunction() {
-            var x = document.getElementById("myDIV");
-                if (x.style.display === "none") {
-            x.style.display = "block";
+            var x = document.getElementById('myDIV');
+                if (x.style.display === 'none') {
+            x.style.display = 'block';
             } else {
-            x.style.display = "none";
+            x.style.display = 'none';
         }
     }
 
-        var closebtns = document.getElementsByClassName("close");
+        var closebtns = document.getElementsByClassName('close');
         var i;
     
         for (i = 0; i < closebtns.length; i++) {
-        closebtns[i].addEventListener("click", function() {
+        closebtns[i].addEventListener('click', function() {
             this.parentElement.style.display = 'none';
         });
 
@@ -253,7 +357,7 @@
 
 
     function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
+  var reveals = document.querySelectorAll('.reveal');
 
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
@@ -261,15 +365,45 @@
     var elementVisible = 150;
 
     if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
+      reveals[i].classList.add('active');
     } else {
-      reveals[i].classList.remove("active");
+      reveals[i].classList.remove('active');
     }
   }
 }
 
-window.addEventListener("scroll", reveal);
+window.addEventListener('scroll', reveal);
 
+
+
+
+
+
+// Get the modal
+var modal = document.getElementById('modal');
+
+// Get the button that opens the modal
+var btn = document.getElementById('loadmodal');
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName('grammarly_close')[0];
+
+// When the user clicks the button, open the modal 
+function loadmodal() {
+  modal.style.display = 'block';
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = 'none';
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+}
 
     </script>
 
