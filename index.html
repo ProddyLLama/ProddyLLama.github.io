@@ -63,15 +63,14 @@
             <h3 class='banner_text'>Microsoft tech support</h3>
         </div>
 
-
+        <!--slogan and title that get revealed-->
         <div class='reveal_container'>
             <h2 class='reveal title'>You're potential, we're passion™</h2>
             <p class='reveal' style='line-height:32px;'>Here at Microsoft, we make sure you'll never want to come back.</p>
         </div>
 
-
+        <!--news that get revealed-->
         <div class='news_table news reveal'>
-            <!--perhaps slideshow for the news @media-->
             <h2 class='news_title'>Latest news from Microsoft</h2>
 
             <div class='news_container'>
@@ -98,7 +97,7 @@
         </div>
 
 
-
+        <!--for the scroll overview-->
         <table class='scrollcontainer'>
             <td>
             <div class='scroll_overview'>
@@ -116,6 +115,7 @@
             </td>
         </table>
 
+        <!--containers that contain stuff-->
         <table class='container' id='fix_problems'>
             <td>
                 <div class='container_content'>
@@ -195,6 +195,7 @@
             </td>
         </table>
 
+        <!--long python window-->
         <div class='long_scam'>
             <div>
                 <img src='assets/images/python_logo.png'></a>
@@ -203,6 +204,7 @@
             </div>
         </div>
 
+        <!--back to normal containers-->
         <table class='container' id='contact_tech_support'>
 
             <td>
@@ -223,14 +225,10 @@
         </table>
 
         
-
-
-
-
-        <!-- The Modal -->
+        <!--the modal-->
         <div id='modal' class='grammarly'>
 
-            <!-- Modal content -->
+            <!--modal content-->
             <div class='grammarly_content'>
                 <div class='grammarly_header'>
                     <span class='grammarly_close'>&times;</span>
@@ -256,7 +254,7 @@
              
         </div>
 
-
+        <!--footer-->
         <footer>
             <div class='footerdiv'>
 
@@ -307,7 +305,7 @@
 
 
     <script>
-
+        //for language
         var coll = document.getElementsByClassName('languagecollapsible');
         var i;
             
@@ -324,6 +322,7 @@
         }
 
 
+        //for the close button
         function myFunction() {
             var x = document.getElementById('myDIV');
                 if (x.style.display === 'none') {
@@ -340,22 +339,15 @@
         closebtns[i].addEventListener('click', function() {
             this.parentElement.style.display = 'none';
         });
-
-      
     }
 
+        //delete parasaurus!!!
         function deletepara() {
             const myobj = document.getElementById('deleteparasaurus');
         myobj.remove();
     }
 
-
-
-
-
-
-
-
+    //for animated stuff
     function reveal() {
   var reveals = document.querySelectorAll('.reveal');
 
@@ -375,30 +367,21 @@
 window.addEventListener('scroll', reveal);
 
 
-
-
-
-
-// Get the modal
+//modal stuff
 var modal = document.getElementById('modal');
 
-// Get the button that opens the modal
 var btn = document.getElementById('loadmodal');
 
-// Get the <span> element that closes the modal
 var span = document.getElementsByClassName('grammarly_close')[0];
 
-// When the user clicks the button, open the modal 
 function loadmodal() {
   modal.style.display = 'block';
 }
 
-// When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = 'none';
 }
 
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = 'none';

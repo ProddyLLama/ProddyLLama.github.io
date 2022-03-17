@@ -5,7 +5,7 @@
         <meta charset='UTF-8'>
         <meta name='description' content='Nothing sus here to see at all'>
         <meta name='keywords' content ='sus, sussy, information, money, scam, superpowers'>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
         <link rel='stylesheet' href='assets/css/scam1.css'>
         <link rel='icon' href='assets/images/forms_icon.png'>
@@ -16,6 +16,7 @@
 
 
     <body>
+        <!--the containers with inputs-->
         <div class='container'>
             <h1 class='whitebox'>Fill in your information to get your powers!</h1>
             <p class='whitebox' style='margin-top:32px;'>Please fill in the form below and launch the executable to receive your superpowers.</p>
@@ -70,7 +71,7 @@
             </div>
         </div>
         
-        
+        <!--this div is centered, but the submit is floated left and the other stuff is floated right-->
         <div class='centre'>
             <button class='submit' id='submit_press'>Submit</button>
             <img src='assets/images/verified.png' height='16px' style='float:right; margin-top:8px; margin-left:8px;'>
@@ -79,7 +80,7 @@
         </div>
         
 
-
+        <!--q&a dropdown-->
         <div class='container'>
             <button class='qacollapsible'>Q & A</button>
             <div class='qacontent'>
@@ -92,19 +93,18 @@
 
 
 
-        <!-- The Modal -->
-        <div id="modal" class="tos">
-
-        <!-- Modal content -->
-            <div class="tos-content">
-                <div class="tos-header">
-                    <span class="close">&times;</span>
+        <!--the modal blur-->
+        <div id='modal' class='tos'>
+        <!--modal content-->
+            <div class='tos-content'>
+                <div class='tos-header'>
+                    <span class='close'>&times;</span>
                     <h2>Confirmation of request</h2>
                 </div>
-                <div class="tos-body">
+                <div class='tos-body'>
                     <p>By submitting this form, you have read and agree to our <a href='https://www.microsoft.com/en-us/legal/terms-of-use'>terms of service</a>.</p>
                 </div>
-                <div class="tos-footer">
+                <div class='tos-footer'>
                     <h3><a href='antivirus.html' class='submit'>Submit</a></h3>
                 </div>
             </div>
@@ -131,30 +131,24 @@
 
 
 
-        
-        // Get the modal
-var modal = document.getElementById("modal");
+//modal stuff
+var modal = document.getElementById('modal');
 
-// Get the button that opens the modal
-var btn = document.getElementById("submit_press");
+var btn = document.getElementById('submit_press');
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName('close')[0];
 
-// When the user clicks the button, open the modal 
 btn.onclick = function() {
-  modal.style.display = "block";
+  modal.style.display = 'block';
 }
 
-// When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-  modal.style.display = "none";
+  modal.style.display = 'none';
 }
 
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
-    modal.style.display = "none";
+    modal.style.display = 'none';
   }
 }
     </script>

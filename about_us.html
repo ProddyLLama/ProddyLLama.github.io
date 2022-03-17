@@ -16,8 +16,7 @@
     </head>
 
     <body>
-
-
+        <!--menu-->
         <ul class='menu'>
             <li target='dropdown'><a target='menu' href='index.html'>Home</a></li>
             <li target='dropdown'><a target='menu' href='https://news.microsoft.com/'>News</a></li>
@@ -31,10 +30,11 @@
               </div>
             </li>
 
+
+            <!--language dropdown-->
             <button class='languagecollapsible'>Language</button>
 
             <div class='languagecontent'>
-                
                 <div>
                     <a href='about_us.html'><img src='assets/images/english_flag.png' id='languageimage'></a>
                     <a href='about_us.html' id='languagelink'>English</a>
@@ -44,54 +44,57 @@
                     <a href='no/no_about_us.html'><img src='assets/images/norwegian_flag.png' id='languageimage'></a>
                     <a href='no/no_about_us.html' id='languagelink'>Norwegian</a>
                 </div>
-                   
+                    
             </div>
-
         </ul>
 
+        <!--the description stuff-->
         <div class='description'>
             <h1>Meet the people at Tech Support</h1>
             <p>We're the people who support your technology. As the heads of Tech support, we do<span style='display:block;'> whatever we can to fix your computer issues.</span></p>
         </div>
 
+    <!--the grey box-->
+    <div style='width:100%; overflow:hidden;'>
+        <div class='greybox'>
+            <table style='margin:auto; width:0px;'>
+                <td id='boxcontent'>
+                    <h1 class='greyboxheader'>"Artificial intelligence will be man's final creation"</h1>
+                    <p>My name is 01010011 01100001 01110100 01111001 01100001 00100000 01001110 01100001 01100100 01100101 01101100 01101100 01100001, but you may call me Satyra Nutella.</p>
+                    <!--I might be a failed clone of Satya Nadella, but I will be more successful than he ever could be.-->
+                    <p>All Indians aspire to be like me, because I am the embodiment of Tech Support. Some may call me a superhero, and I couldn't agree less. If you'd like to have the same powers, click <a target='normal_link' href='scam1.html'>here</a>.</p>
+                    <!--"Satya Nadella" in binary code, which is my real name-->
 
-<div style='width:100%; overflow:hidden;'>
-    <div class='greybox'>
-        <table style='margin:auto; width:0px;'>
-            <td id='boxcontent'>
-                <h1 class='greyboxheader'>"Artificial intelligence will be man's final creation"</h1>
-                <p>My name is 01010011 01100001 01110100 01111001 01100001 00100000 01001110 01100001 01100100 01100101 01101100 01101100 01100001, but you may call me Satyra Nutella.</p>
-                <!--I might be a failed clone of Satya Nadella, but I will be more successful than he ever could be.-->
-                <p>All Indians aspire to be like me, because I am the embodiment of Tech Support. Some may call me a superhero, and I couldn't agree less. If you'd like to have the same powers, click <a target='normal_link' href='scam1.html'>here</a>.</p>
-                <!--"Satya Nadella" in binary code, which is my real name-->
-
-                <div class='contact'>
-                    <p>Contact:</p>
-                    <div style='display:inline-block;'>
-                        <a href='https://twitter.com/microsoft'><img src='assets/images/twitter_logo.png' class='social_logo' style='margin-left:8px;'></a>
-                        <a href='https://www.instagram.com/microsoft/'><img src='assets/images/instagram_logo.png' class='social_logo' style='margin-left:8px;'></a>
-                        <a href='https://www.facebook.com/Microsoft/'><img src='assets/images/facebook_logo.png' class='social_logo' style='margin-left:8px;'></a>
-                        <a href='https://www.linkedin.com/company/microsoft'><img src='assets/images/linkedin_logo.png' class='social_logo' style='margin-left:8px;'></a>
+                    <div class='contact'>
+                        <p>Contact:</p>
+                        <div style='display:inline-block;'>
+                            <a href='https://twitter.com/microsoft'><img src='assets/images/twitter_logo.png' class='social_logo' style='margin-left:8px;'></a>
+                            <a href='https://www.instagram.com/microsoft/'><img src='assets/images/instagram_logo.png' class='social_logo' style='margin-left:8px;'></a>
+                            <a href='https://www.facebook.com/Microsoft/'><img src='assets/images/facebook_logo.png' class='social_logo' style='margin-left:8px;'></a>
+                            <a href='https://www.linkedin.com/company/microsoft'><img src='assets/images/linkedin_logo.png' class='social_logo' style='margin-left:8px;'></a>
+                        </div>
                     </div>
+                    
+                </td>
+
+                <!--the spoilered images-->
+                <td>
+                <div class='greyboximg' id='boximg'>
+                    <img src='assets/images/satyra_nutella_spoiler.png' id='delete_me' onclick='revealspoiler()' style='cursor:pointer;'>
+                    <img src='assets/images/satyra_nutella.png' id='satyrashow' style='display:none;'>
                 </div>
-                
-            </td>
+                </td>
+            </table>
+        </div>
 
-            <td>
-            <div class='greyboximg' id='boximg'>
-                <img src='assets/images/satyra_nutella_spoiler.png' id='delete_me' onclick='unspoiler(); revealspoiler()' style='cursor:pointer;'>
-                <img src='assets/images/satyra_nutella.png' id='satyrashow' style='display:none;'>
-            </div>
-            </td>
-        </table>
-    </div>
-
+        <!--the purple box-->
         <div class='purplebox'>
             <table style='margin:auto; width:0px;'>
-
+            
+            <!--spoilrd imgsssssjes-->
             <td>
                 <div class='purpleboximg' id='boximg'>
-                    <img src='assets/images/never_gonna_give_you_up_spoilered.png' id='delete_him' onclick='unspoiler_him(); revealspoiler_him()' style='cursor:pointer;'>
+                    <img src='assets/images/never_gonna_give_you_up_spoilered.png' id='delete_him' onclick='revealspoiler_him()' style='cursor:pointer;'>
                     <img src='assets/images/never_gonna_give_you_up.gif' id='fredshow' style='display:none; min-height:256; max-height:352px;'>
                 </div>
             </td>
@@ -117,9 +120,9 @@
             </table>
         </div>
 
-</div>
+    </div>
 
-
+    <!--footer-->
     <footer>
         <div class='footerdiv'>
 
@@ -166,33 +169,22 @@
         </div>
     </footer>
 
-<script>
+    <script>
 
-            var coll = document.getElementsByClassName('languagecollapsible');
-            var i;
+        var coll = document.getElementsByClassName('languagecollapsible');
+        var i;
                 
-            for (i = 0; i < coll.length; i++) {
-                coll[i].addEventListener('click', function() {
-                this.classList.toggle('languageactive');
-                var content = this.nextElementSibling;
-                if (content.style.maxHeight){
-                    content.style.maxHeight = null;
-                } else {
-                    content.style.maxHeight = content.scrollHeight + 'px';
-                } 
-                });
-            }
-
-
-
-
-
-    function unspoiler() {
-
-
-}
-
-
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener('click', function() {
+            this.classList.toggle('languageactive');
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+            } 
+            });
+        }
 
     function revealspoiler() {
   var x = document.getElementById("satyrashow");
@@ -204,15 +196,6 @@
   const myobj = document.getElementById('delete_me');
     myobj.remove();
 }
-
-
-
-function unspoiler_him() {
-
-    }
-
-
-
 
     function revealspoiler_him() {
   var x = document.getElementById("fredshow");
