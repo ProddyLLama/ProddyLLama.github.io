@@ -1,0 +1,1377 @@
+/*everything top popup included*/
+
+.top_popup{
+  font-size:24px;
+  color:dimgray;
+  text-shadow: 1px 1px 2px rgb(73, 73, 73);
+  font-weight:512;
+  background-color:whitesmoke;
+
+  position:sticky;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+
+
+  margin-top:0px;
+  padding:16px;
+
+  z-index:2;
+  box-shadow:2px 5px 10px lightgray;
+
+}
+
+.top_popup > img {
+  width:32px;
+  padding-right:16px;
+  float:left;
+}
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  padding: 12px 16px;
+  transform: translate(0%, -50%);
+  text-decoration:none;
+  text-shadow:none;
+}
+
+.close:hover {
+  background:lightgray;
+}
+
+
+/*and button included*/
+
+a[target=button]:link, a[target=button]:visited {
+  background-color:dodgerblue;
+  padding:10px 20px;
+  text-align:center;
+  color:white;
+  text-decoration:none;
+  text-shadow:none;
+  font-size:16px;
+}
+
+a[target=button]:hover, a[target=button]:active {
+  background-color:royalblue;
+  color:white;
+}
+
+
+#claim365 {
+  margin-right:32px;
+  top:12px;
+
+  display:block;
+  float:right;
+}
+
+
+
+
+/* modal background */
+.grammarly {
+  display:none;
+  position:fixed;
+  z-index:4;
+  padding:32px 0px;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background-color:rgb(0,0,0);
+  background-color:rgba(0,0,0,0.4);
+
+  overflow:scroll;
+}
+
+/*modal content*/
+.grammarly_content {
+  position: relative;
+  background-color: white;
+  margin: auto;
+  padding: 0;
+  width: 720px;
+
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/*modal animation*/
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.grammarly_close {
+  color: black;
+  float:right;
+  font-size: 20px;
+  font-weight: normal;
+  padding:6px 12px;
+}
+
+.grammarly_close:hover,
+.grammarly_close:focus {
+  background-color:whitesmoke;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.grammarly_header {
+  padding:16px 16px;
+  background-color:white;
+  color: black;
+  font-size:20px;
+}
+
+.grammarly_body {
+  padding: 2px 16px;
+  margin-top:16px;
+  color:black;
+  text-align:center;
+}
+
+.grammarly_body > p {
+  font-size:20px;
+  margin-bottom:8px;
+  margin-top:8px;
+}
+
+
+.grammarly_footer {
+  padding: 32px;
+  background-color:white;
+  color: white;
+  text-align:center;
+}
+
+
+.grammarly_download {
+  background-color:rgb(17, 166, 131);
+  text-decoration:none;
+  color:white;
+  font-size:16px;
+  padding:16px 32px;
+  border-radius:8px;
+
+  width:auto;
+
+  text-align:center;
+}
+
+.grammarly_download:hover {
+  background-color:rgb(21, 195, 154);
+}
+
+
+.grammarly_logo {
+  width:32%;
+  margin:auto;
+  display:block;
+}
+
+.grammarly_img {
+  margin:auto;
+  display:block;
+}
+
+
+
+/*banner*/
+
+.banner {
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+
+  color:white;
+  text-transform:uppercase;
+  z-index:-1;
+}
+
+.banner_text{
+  position:absolute;
+  top:30%;
+  left:50%;
+  transform: translate(-50%, -30%);
+  font-weight:normal;
+  font-size:46px;
+}
+
+
+
+
+
+/*slogan n stuff*/
+
+.reveal_container {
+  background-color:rgb(225, 235, 243);
+  max-width:512px;
+  padding:64px 128px;
+  margin:auto;
+  margin-top:64px;
+  text-align:center;
+}
+
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.title {
+  margin:auto;
+  font-size:32px;
+  margin-bottom:16px;
+  font-weight:normal;
+}
+
+
+
+/*news*/
+
+.news_table {
+  margin:auto;
+}
+
+.news {
+  width:100%;
+  background-color:rgb(225, 235, 243);
+  margin:auto;
+  overflow:hidden;
+  margin-top:128px;
+  margin-bottom:128px;
+  text-align:center;
+}
+
+.news_date {
+  float:right;
+  font-size:12px;
+  color:grey;
+}
+
+.news_title {
+  text-align:center;
+  margin-top:0px;
+  background-color:dodgerblue;
+  color:white;
+  padding:16px;
+  width:100%
+}
+
+.news_container {
+  margin:8px;
+  width:400px;
+  height:400px;
+  background-color:white;
+  padding:16px;
+  display:inline-block;
+}
+
+.news_container > h3 {
+  font-size:24px;
+  font-weight:bolder;
+}
+
+.news_container > p {
+  font-size:16px;
+  margin-top:16px;
+  margin-left:8px;
+  margin-bottom:26px;
+  line-height:22px;
+}
+
+
+.news_container > img {
+  width:320px;
+  margin:auto;
+  display:block;
+  border-radius:4px;
+}
+
+/*for the links integrated into p*/
+.p_link {
+  text-decoration:none;
+  color:black;
+  font-weight:bolder;
+}
+
+.p_link:hover {
+  text-decoration:underline;
+  color:midnightblue;
+}
+
+
+/*quick scroll stuff*/
+.scrollcontainer {
+  margin:auto;
+  width:1366px;
+  display:block;
+  height:auto;
+  padding:none;
+  margin-bottom:128px;
+}
+
+.scrollheader {
+  font-size:42px;
+  font-weight:normal;
+  margin-left:32px;
+}
+
+
+.scroll_overview {
+  background-color:rgb(225, 235, 243);
+  width:512px;
+  float:left;
+  border-top:24px solid dodgerblue;
+}
+
+.scroll_overview > a {
+  padding: 12px 16px;
+  display:block;
+  text-decoration:none;
+  font-size:20px;
+  border-bottom:2px solid whitesmoke;
+  color:black;
+}
+
+.scroll_overview > a:hover {
+  background-color:rgb(183, 195, 221);
+}
+
+
+/*for all the containers downward*/
+.container {
+  margin:auto;
+  display:block;
+  max-width:1366px;
+  margin-bottom:128px;
+  overflow:hidden;
+}
+
+
+.container_content {
+  width:100%;
+}
+
+.container_content > h2 {
+  font-weight:normal;
+  font-size:32px;
+}
+
+.container_content > p {
+  margin:16px 0px;
+}
+
+.container_content > img {
+  width:100%;
+  margin-top:32px;
+}
+
+.scam_window {
+  width:512px;
+  background-color:rgb(225, 235, 243);
+  padding:32px;
+  margin:64px;
+}
+
+.scam_window > img {
+  max-width:672px;
+  height:auto;
+  margin:auto;
+  display:block;
+}
+
+.scam_window > h2 {
+  font-weight:normal;
+  font-size:32px;
+}
+
+/*the python long scam*/
+.long_scam {
+  width:100%;
+  background-color:rgb(32, 53, 73);
+  height:100%;
+  padding:32px 0px;
+}
+
+.long_scam > div {
+  margin:auto;
+  max-width:1024px;
+  text-align:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.long_scam > div > img {
+  height:256px;
+}
+
+
+.scamdownload {
+  background:
+    linear-gradient(
+      greenyellow,
+      lime
+    );
+  padding:16px 32px;
+  text-align:center;
+  color:white;
+  font-weight:bolder;
+  text-decoration:none;
+  font-size:32px;
+  border-radius:8px;
+  margin:32px;
+}
+
+.scamdownload:hover {
+  background:
+  linear-gradient(
+    limegreen,
+    green
+  );
+}
+
+
+/*robux scam omg*/
+.robux_window {
+  background:
+    linear-gradient(
+            to right,
+            rgba(255, 0, 0, 1),
+            rgba(255, 0, 180, 1),
+            rgba(0, 100, 200, 1)
+        );
+  
+  padding:64px 16px;
+
+  border-radius:8px;
+
+  text-decoration:none;
+  color:white;
+  font-weight:bold;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:24px;
+
+  display:block;
+  margin-top:32px;
+
+  text-align:center;
+}
+
+.robux_window:hover {
+  box-shadow: 2px 2px 20px grey;
+}
+
+.roblox_img_1 {
+  width:128px;
+  vertical-align:middle
+}
+
+.roblox_img_2 {
+  vertical-align:middle;
+  width:64px;
+}
+
+
+/*for 125% (on chrome) on my 1920x1080 pixel laptop*/
+@media screen and (max-width:1376px) {
+  .top_popup{
+    font-size:16px;
+    text-shadow: 1px 1px 1.5px rgb(73, 73, 73);
+
+    padding:12px;
+  
+    z-index:2;
+    box-shadow:2px 5px 10px lightgray;
+  
+  }
+  
+  .top_popup > img {
+    padding-right:8px;
+    height:28px;
+    width:auto;
+  }
+
+  a[target=button]:link, a[target=button]:visited {
+    padding:8px 12px;
+    font-size:14px;
+  }
+  
+  a[target=button]:hover, a[target=button]:active {
+    background-color:royalblue;
+    color:white;
+  }
+  
+  
+  #claim365 {
+    margin-top:-8px;
+  }
+
+
+
+.grammarly_content {
+  width: 640px;
+}
+
+
+.grammarly_header {
+  padding:16px 16px;
+  font-size:18px;
+}
+
+.grammarly_body {
+  padding: 2px 16px;
+  margin-top:8px;
+}
+
+.grammarly_body > p {
+  font-size:18px;
+  line-height:24px;
+}
+
+
+.grammarly_download {
+  font-size:14px;
+  padding:14px 32px;
+}
+  
+
+  .scrollcontainer {
+    max-width:95%;
+  }
+  
+  .scroll_overview > a {
+    font-size:16px;
+  }
+
+  .scrollheader {
+    font-size:24px;
+  }
+
+  .scroll_p {
+    font-size:18px;
+    line-height:24px;
+  }
+
+  
+  .banner_text{
+    font-size:38px;
+  }
+
+
+  .container {
+    max-width:95%;
+    margin-bottom:128px;
+  }
+
+  .container_content > h2 {
+    font-size:24px;
+  }
+  
+  .container_content > p {
+    margin:16px 0px;
+    font-size:18px;
+    line-height:24px;
+  }
+
+  .scam_window {
+    width:464px;
+    margin:32px;
+  }
+
+  .scam_window > p {
+    font-size:18px;
+    line-height:24px;
+  }
+
+  .scam_window > h2 {
+    font-size:24px;
+  }
+  
+  .robux_window {
+
+    padding:32px 8px;
+    font-size:20px;
+
+    margin-top:16px;
+  }
+
+}
+
+
+/*for 150% (on chrome) on my 1920x1080 pixel laptop*/
+@media screen and (max-width: 1216px) {
+
+  .grammarly {
+    padding-top:8px;
+  }
+
+  .grammarly_content {
+    width: 576px;
+  }
+  
+  .grammarly_close {
+    font-size: 18px;
+  }
+  
+  
+  .grammarly_header {
+    padding:16px 16px;
+    font-size:16px;
+  }
+  
+  .grammarly_body {
+    margin-top:4px;
+  }
+  
+  .grammarly_body > p {
+    font-size:16px;
+  }
+  
+  
+  .grammarly_footer {
+    padding: 16px;
+  }
+  
+  
+  .grammarly_download {
+    font-size:14px;
+    padding:14px 32px;
+    border-radius:8px;
+  }
+
+
+  .scroll_overview > a {
+    font-size:16px;
+  }
+
+  .scroll_p {
+    font-size:16px;
+  }
+
+  .scroll_overview {
+    width:400px;
+    border-top:20px solid dodgerblue;
+  }
+
+
+
+  .container {
+    margin-bottom:128px;
+  }
+
+  .container_content > p {
+    font-size:16px;
+  }
+
+  .scam_window {
+    width:384px;
+    margin:32px;
+  }
+
+  .scam_window > p {
+    font-size:16px;
+  }
+  
+  .scam_window > img {
+    max-width:608px;
+  }
+
+  .robux_window {
+
+    padding:32px 8px;
+    font-size:18px;
+
+    margin-top:8px;
+  }
+
+  .roblox_img_1 {
+    width:96px;
+  }
+
+  .roblox_img_2 {
+    width:48px;
+  }
+
+
+  .long_scam {
+    padding:32px 0px;
+  }
+  
+  .long_scam > div {
+    max-width:1024px;
+  }
+  
+  .long_scam > div > img {
+    height:256px;
+  }
+  
+  
+  .scamdownload {
+    padding:12px 16px;
+    font-size:24px;
+    border-radius:4px;
+    margin:32px;
+  }
+
+}
+
+
+/*for 175% (on chrome) on my 1920x1080 pixel laptop*/
+@media screen and (max-width: 992px) {
+  
+  .top_popup > img {
+    height:24px;
+    width:auto;
+  }
+  
+  
+  
+  a[target=button]:link, a[target=button]:visited {
+    font-size:12px;
+  }
+  
+  #claim365 {
+    margin-top:-6px;
+  }
+
+
+  .banner_text{
+    font-size:34px;
+  }
+
+
+  .scroll_overview {
+    width:288px;
+    border-top:20px solid dodgerblue;
+  }
+
+  .scam_window {
+    width:320px;
+    margin:32px;
+  }
+
+
+  .robux_window {
+
+    padding:16px 8px;
+    font-size:16px;
+
+    margin-top:8px;
+  }
+
+  .roblox_img_1 {
+    width:80px;
+  }
+
+  .roblox_img_2 {
+    width:48px;
+  }
+
+  
+  .long_scam > div {
+    max-width:1024px;
+  }
+  
+  .long_scam > div > img {
+    height:160px;
+  }
+
+}
+
+
+
+/*for 200% (on chrome) on my 1920x1080 pixel laptop*/
+@media screen and (max-width: 864px) {
+  .grammarly {
+    padding-top:4px;
+  }
+
+  .grammarly_content {
+    width: 544px;
+  }
+
+  .grammarly_close {
+    font-size: 16px;
+  }
+
+
+  .grammarly_header {
+    padding:16px 16px;
+  }
+
+  .grammarly_body {
+    margin-top:4px;
+  }
+
+  .grammarly_body > p {
+    font-size:14px;
+  }
+
+
+  .grammarly_footer {
+    padding: 16px;
+  }
+
+
+  .grammarly_download {
+    font-size:14px;
+    padding:12px 20px;
+    border-radius:6px;
+  }
+
+  .grammarly_img {
+    margin:auto;
+    display:block;
+    width:65%;
+  }
+
+
+  .banner_text{
+    font-size:28px;
+  }
+
+
+
+  .reveal_container {
+    max-width:512px;
+    padding:64px 128px;
+    margin-top:64px;
+  }
+  
+  
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .title {
+    margin:auto;
+    font-size:32px;
+    margin-bottom:16px;
+    font-weight:normal;
+  }
+  
+  
+  .news {
+    margin-top:64px;
+    margin-bottom:64px;
+  }
+  
+  .news_date {
+    font-size:10px;
+  }
+  
+  .news_title {
+    padding:12px;
+    font-size:18px;
+  }
+
+  .news_container {
+    width:368px;
+    height:368px;
+    padding:12px;
+  }
+  
+  .news_container > h3 {
+    font-size:20px;
+  }
+  
+  .news_container > p {
+    font-size:14px;
+    margin-top:8px;
+  }
+  
+  
+  .news_container > img {
+    width:240px;
+    border-radius:2px;
+  }
+
+
+
+
+  .scroll_p {
+    font-size:14px;
+    line-height:20px;
+    margin-bottom:0px;
+  }
+
+  
+  .container {
+    margin-bottom:128px;
+  }
+
+  .container_content > p {
+    font-size:14px;
+    line-height:20px;
+  }
+
+  .scam_window {
+    width:224px;
+    margin:16px;
+  }
+
+  .scam_window > p {
+    font-size:14px;
+    line-height:20px;
+  }
+  
+  .scam_window > img {
+    max-width:576px;
+  }
+
+  .robux_window {
+    padding:16px 8px;
+    font-size:16px;
+  }
+
+  .roblox_img_1 {
+    width:64px;
+  }
+
+  .roblox_img_2 {
+    width:32px;
+  }
+}
+
+
+/*for 300%*/
+@media screen and (max-width:608px) {
+  .grammarly {
+    padding-top:2px;
+  }
+
+  .grammarly_content {
+    width: 320px;
+  }
+
+  .grammarly_close {
+    font-size: 12px;
+  }
+
+
+  .grammarly_header {
+    padding:8px 8px;
+  }
+
+  .grammarly_body {
+    margin-top:2px;
+  }
+
+  .grammarly_body > p {
+    font-size:10px;
+    line-height:14px;
+  }
+
+
+  .grammarly_footer {
+    padding: 16px;
+  }
+
+
+  .grammarly_download {
+    font-size:10px;
+  }
+
+  .grammarly_img {
+    margin:auto;
+    display:block;
+    width:50%;
+  }
+
+
+  .top_popup{
+    font-size:12px;
+    text-shadow: none;
+
+    padding:8px;
+  
+  }
+  
+  .top_popup > img {
+    padding-right:8px;
+    height:18px;
+    width:auto;
+  }
+
+  a[target=button]:link, a[target=button]:visited {
+    padding:6px 8px;
+    font-size:8px;
+  }
+  
+  a[target=button]:hover, a[target=button]:active {
+    background-color:royalblue;
+  }
+  
+  
+  #claim365 {
+    margin-top:-4px;
+  }
+
+  .close {
+    padding: 8px 12px;
+  }
+
+  .reveal_container {
+    padding:32px 32px;
+  }
+
+  
+  .title {
+    margin:auto;
+    font-size:24px;
+    margin-bottom:16px;
+    font-weight:normal;
+  }
+
+  .reveal_container > p {
+    font-size:16px;
+  }
+
+
+  
+  .news {
+    margin-top:32px;
+    margin-bottom:32px;
+  }
+  
+  .news_date {
+    font-size:8px;
+  }
+  
+  .news_title {
+    padding:8px;
+    font-size:16px;
+  }
+
+  .news_container {
+    width:336px;
+    height:336px;
+    padding:12px;
+  }
+  
+  .news_container > h3 {
+    font-size:16px;
+    font-weight:normal;
+  }
+  
+  .news_container > p {
+    font-size:12px;
+    margin-top:6px;
+  }
+
+
+  .scroll_overview {
+    width:192px;
+    border-top:16px solid dodgerblue;
+  }
+
+  .scroll_overview > a {
+    font-size:12px;
+  }
+
+  .scrollheader {
+    font-size:16px;
+  }
+
+  .scroll_p {
+    margin-top:8px;
+    font-size:12px;
+    line-height:18px;
+  }
+
+
+
+  .container {
+    margin-bottom:64px;
+  }
+
+  .container_content > p {
+    font-size:12px;
+    line-height:18px;
+  }
+
+  .scam_window {
+    width:176px;
+    margin:16px;
+  }
+
+  .scam_window > h2 {
+    font-size:14px;
+  }
+
+  .scam_window > p {
+    font-size:12px;
+    line-height:14px;
+  }
+  
+  .scam_window > img {
+    max-width:64px;
+  }
+
+  .robux_window {
+    padding:16px 8px;
+    font-size:14px;
+  }
+
+  .roblox_img_1 {
+    width:32px;
+  }
+
+  .roblox_img_2 {
+    width:16px;
+  }
+
+
+
+
+  .long_scam {
+    padding:16px 0px;
+  }
+
+  .long_scam > div {
+    max-width:1024px;
+  }
+
+  .long_scam > div > img {
+    height:96px;
+  }
+
+  .scamdownload {
+    padding:8px 12px;
+    font-size:16px;
+    border-radius:2px;
+  }
+
+}
+
+
+
+
+
+
+/*for 400%-500%, phone compatible*/
+@media screen and (max-width:400px) {
+  .grammarly_content {
+    width: 256px;
+  }
+
+  .grammarly_close {
+    font-size: 8px;
+  }
+
+  .grammarly_body {
+    margin-top:0px;
+    padding:0px;
+  }
+
+  .grammarly_body > p {
+    font-size:8px;
+    line-height:12px;
+  }
+
+
+  .grammarly_download {
+    font-size:6px;
+    padding:8px;
+    border-radius:2px;
+  }
+
+
+  .top_popup{
+    font-size:8px;
+    padding:4px;
+  }
+  
+  .top_popup > img {
+    height:12px;
+    width:auto;
+  }
+
+  a[target=button]:link, a[target=button]:visited {
+    padding:5.5px 8px;
+    font-size:6px;
+  }
+  
+  a[target=button]:hover, a[target=button]:active {
+    background-color:royalblue;
+  }
+  
+  
+  #claim365 {
+    margin-top:-4px;
+  }
+
+  .close {
+    padding: 4px 8px;
+  }
+
+  .banner_text{
+    font-size:22px;
+  }
+
+  
+  .title {
+    font-size:20px;
+  }
+
+  .reveal_container > p {
+    font-size:14px;
+  }
+
+  
+  .news_date {
+    font-size:6px;
+  }
+  
+  .news_title {
+    padding:8px;
+    font-size:14px;
+  }
+
+  .news_container {
+    width:256px;
+    height:256px;
+    padding:8px;
+  }
+  
+  .news_container > h3 {
+    font-size:12px;
+    font-weight:normal;
+  }
+  
+  .news_container > p {
+    font-size:8px;
+    line-height:14px;
+    margin-top:6px;
+  }
+
+  .news_container > img {
+    width:208px;
+  }
+
+
+  .scrollcontainer {
+    max-width:98%;
+  }
+
+  .scroll_overview {
+    width:128px;
+    border-top:16px solid dodgerblue;
+  }
+
+  .scroll_overview > a {
+    font-size:8px;
+    padding:8px;
+  }
+
+  .scrollheader {
+    font-size:14px;
+  }
+
+  .scroll_p {
+    margin-top:8px;
+    font-size:8px;
+    line-height:14px;
+  }
+
+
+
+  .container {
+    margin-bottom:32px;
+    max-width:98%;
+  }
+
+  .container_content > p {
+    font-size:8px;
+    line-height:14px;
+  }
+
+  .container_content > h2 {
+    font-size:16px;
+  }
+
+  .scam_window {
+    width:64px;
+    margin:16px;
+  }
+
+  .scam_window > h2 {
+    font-size:12px;
+  }
+
+  .scam_window > p {
+    font-size:8px;
+    line-height:14px;
+  }
+  
+  .scam_window > img {
+    max-width:48px;
+  }
+
+  .robux_window {
+    padding:8px;
+    font-size:8px;
+  }
+
+  .roblox_img_1 {
+    width:24px;
+  }
+
+  .roblox_img_2 {
+    width:12px;
+  }
+
+
+
+
+  .long_scam {
+    padding:16px 0px;
+  }
+
+  .long_scam > div {
+    max-width:1024px;
+  }
+
+  .long_scam > div > img {
+    height:48px;
+  }
+
+  .scamdownload {
+    padding:6px;
+    font-size:10px;
+    border-radius:2px;
+  }
+
+}
